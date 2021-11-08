@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Front Final</title>
+<meta charset="utf-8">
+<meta name="description" content="Este es un documento HTML5">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="misestilos.css">
+<script type="text/javascript" src="js/FuncionesCategoria.js"></script>  
+</head>
+
+<body>
+    <header id="cabeceralogo">
+    <div>
+    <h1>Categorias </h1>
+    </div>
+    </header>
+    <nav id="menuprincipal">
+    <div>
+    <ul>
+        <li><a href="index.html">Principal</a></li>
+        <li><a href="Bicicletas.html">Bicicletas</a></li>
+        <li><a href="Categorias.html">Categorias</a></li>
+        <li><a href="Clientes.html">Clientes</a></li>
+        <li><a href="Mensajes.html">Mensajes</a></li>
+        <li><a href="Reservaciones.html">Reservaciones</a></li>
+        <li><a href="Reportes.html">Reportes</a></li>
+    </ul>
+    </div>
+    </nav>
+
+    <div id="resultado1"></div>
+    
+    <div>
+        <label for="Cname"> Nombre: </label>
+        <input type="text" id="Cname" placeholder="name">
+        <label for="Cdescription"> Descripción: </label>
+        <input type="text" id="Cdescription" placeholder="description">
+       
+        
+    </div>
+    <button onclick="traerInfoCategoria()" > Consultar Categorias</button>
+    <button onclick="agregarCategoria()"> Agregar Categorias</button>
+
+    <!--Estilo de la Tabla-->
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid rgb(0, 198, 212);
+            border-collapse: collapse;
+        }
+        </style>
+</body>
+</html>
